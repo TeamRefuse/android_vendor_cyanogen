@@ -15,6 +15,7 @@ Maintainers:
 * Nexus S: Koush
 * Droid: cvpcs, mtwebster, Koush
 * Dream/Sapphire: Sileht, Wes Garner, Cyanogen
+* Eris: Workshed, Conap
 * Hero: Esa Laukkanen (GSM), Darchstar (CDMA)
 * Desire (GSM/CDMA): Kali-, Defer
 * Incredible: jistone, slayher, Koush
@@ -26,7 +27,7 @@ Maintainers:
 * Geeksphone ONE: arcee
 * Geeksphone ZERO: arcee
 * Z71 (Boston, G1305, XT502, A60, Blaze, others): arcee
-* Wildfire: Jacob Crawley, Arne Coucheron
+* Buzz (Wildfire): Jacob Crawley, Arne Coucheron
 * Harmony (Malata smb_a1002/smb_b9701): bekit, pershoot
 * Harmony (Malata smb_a1004/smb_a1011): arcee
 * Ace (Desire HD): Kali-
@@ -38,6 +39,11 @@ Maintainers:
 * Zeppelin (CLIQ XT/Quench): firesnatch, turl
 * Morrison (CLIQ/DEXT): ngiordano, dwagner, JassyCliq
 * Star (LG Optimus 2/G2x): arcee, cyanogen
+* Galaxy S (GT-I9000): coolya, codeworkx, atinm, GuiperPT, Unhelpful
+* Captivate (SGH-I896/SGH-I897): atinm, Unhelpful, coolya, codeworkx
+* Vibrant (SGH-T959): coolya, atinm, codeworkx, Unhelpful
+* Incredible S: Kali-, attn1
+* Jordan (Defy): Quarx, Epsylon3, maniac103
 
 Translators:
 ------------
@@ -68,7 +74,7 @@ CHANGELOG
 * Common: Profile improvements and bugfixes - Martin Long
 * Common: RTL text improvements - Eyad Aboulouz, Eran Mizrahi
 * Common: Wake on volume key option - Sven Dawitz
-* Common: Support for revoking application permissions - Plamen K. Kosseff 
+* Common: Support for revoking application permissions - Plamen K. Kosseff
 * Common: Latest Superuser app - ChainsDD
 * Common: Control brightness by sliding on statusbar - Danesh M
 * Common: Add "copy all" to context menu - Danesh M
@@ -80,9 +86,16 @@ CHANGELOG
 * Common: Option to hide hold button during call - Roberto Leinardi
 * Common: Allow using wildcards for call blacklisting - Nihanth Subramanya
 * Common: Option to allow in-call lockscreen to match main lockscren - Sven Dawitz
+* Common: Option to notify about incoming call only in background when screen is on - Pavel Kucera
 * Common: ADWLauncher- Transitions, catalog improvements, bugfixes - John Van Etten
 * Common: Optional GMT correction for SMS/MMS timestamps - Terry Hau
-* Vision/Glacier/Ace/Speedy: 2.6.35 kernel and updated userspace
+* Common: Add FM Seek for TI devices - KalimochoAz
+* Common: Add FM support for SI4708 devices (Blade, V9, Racer) - Stéphane Konstantaropoulos
+* Common: Add FM seek implementation to FM application - Tom Giordano
+* Click, Motorola: Speed up photo recording - Emilio López
+* Click, Motorola: Add Geolocation to photo app - KalimochoAz
+* Vision/Glacier/Ace/Speedy/Vivo: 2.6.35 kernel and updated userspace
+* Buzz: 2.6.35 kernel - Arne Coucheron
 
 ### 7.0.3
 * Common: Don't allow packages with platform keys on user-controlled storage
