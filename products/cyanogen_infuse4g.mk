@@ -15,7 +15,7 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := infuse4g
 PRODUCT_MODEL := SGH-I997
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
 
 # Extra infuse4g overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/infuse4g
@@ -32,7 +32,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.additionalmounts=/mnt/emmc
+    ro.additionalmounts=/mnt/emmc \
+	ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
 #
 # Set ro.modversion
