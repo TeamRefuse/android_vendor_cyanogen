@@ -16,7 +16,6 @@ PRODUCT_DEVICE := infuse4g
 PRODUCT_MODEL := SGH-I997
 PRODUCT_MANUFACTURER := samsung
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
-# PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ22 BUILD_FINGERPRINT=samsung/SGH-I997/SGH-I997/SGH-I997:2.2.1/FROYO/UCKE3:user/release-keys PRIVATE_BUILD_DESC="SGH-I997-user 2.2.1 FROYO UCKE3 release-keys"
 
 # Extra infuse4g overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/infuse4g
@@ -25,8 +24,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/infuse4g
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.ril.enable.managed.roaming=1 \
     ro.ril.oem.nosim.ecclist=911,112,999,000,08,118,120,122,110,119,995 \
-    ro.ril.emc.mode=2
-	ro.ril.hsxpa=3
+    ro.ril.emc.mode=2 \
+	ro.ril.hsxpa=2 \
+	ro.ril.gprsclass=12 \
+	ro.ril.hsdpa.category=14 \
+	ro.ril.hsupa.category=6
 
 # Add additional mounts
 PRODUCT_PROPERTY_OVERRIDES += \
