@@ -15,7 +15,7 @@ PRODUCT_BRAND := samsung
 PRODUCT_DEVICE := infuse4g
 PRODUCT_MODEL := SGH-I997
 PRODUCT_MANUFACTURER := samsung
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=soju BUILD_ID=GRJ22 BUILD_DISPLAY_ID=GRJ90 BUILD_FINGERPRINT=google/soju/crespo:2.3.4/GRJ22/121341:user/release-keys PRIVATE_BUILD_DESC="soju-user 2.3.4 GRJ22 121341 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=SGH-I997 BUILD_ID=GINGERBREAD BUILD_FINGERPRINT=samsung/SGH-I997/SGH-I997:2.3.5/GINGERBREAD/UCKJ1:user/release-keys PRIVATE_BUILD_DESC="SGH-I997-user 2.3.5 GINGERBREAD UCKJ1 release-keys"
 
 # Extra infuse4g overlay
 PRODUCT_PACKAGE_OVERLAYS += vendor/cyanogen/overlay/infuse4g
@@ -35,21 +35,10 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.additionalmounts=/mnt/emmc \
 	ro.vold.switchablepair=/mnt/sdcard,/mnt/emmc
 
-#
-# Set ro.modversion
-#
-ifdef CYANOGEN_NIGHTLY
-    PRODUCT_PROPERTY_OVERRIDES += \
-        ro.modversion=CyanogenMod-7-$(shell date +%m%d%Y)-NIGHTLY-Infuse4G
-else
-    ifdef CYANOGEN_RELEASE
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Infuse4G
-    else
-        PRODUCT_PROPERTY_OVERRIDES += \
-            ro.modversion=CyanogenMod-7.1.0-Infuse4G-KANG
-    endif
-endif
+# Release name and versioning
+PRODUCT_RELEASE_NAME := Infuse4G
+PRODUCT_VERSION_DEVICE_SPECIFIC :=
+-include vendor/cyanogen/products/common_versions.mk
 
 #
 # Copy infuse4g specific prebuilt files
